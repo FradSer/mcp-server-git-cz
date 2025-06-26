@@ -30,7 +30,7 @@
 
 1. **Clone and install**:
    ```bash
-   git clone https://github.com/example/mcp-server-git-cz.git
+   git clone https://github.com/FradSer/mcp-server-git-cz.git
    cd mcp-server-git-cz
    uv venv && uv pip install -r requirements.txt
    ```
@@ -57,7 +57,7 @@
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/example/mcp-server-git-cz.git
+   git clone https://github.com/FradSer/mcp-server-git-cz.git
    cd mcp-server-git-cz
    ```
 
@@ -277,7 +277,7 @@ We welcome contributions! Please follow these guidelines:
 
 ### Reporting Issues
 
-Found a bug? Have a feature request? Please [open an issue](https://github.com/example/mcp-server-git-cz/issues) with:
+Found a bug? Have a feature request? Please [open an issue](https://github.com/FradSer/mcp-server-git-cz/issues) with:
 
 - Clear description of the problem
 - Steps to reproduce
@@ -290,17 +290,17 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## Support
 
-- **Documentation**: [Full documentation](https://github.com/example/mcp-server-git-cz/wiki)
-- **Bug Reports**: [GitHub Issues](https://github.com/example/mcp-server-git-cz/issues)
-- **Feature Requests**: [GitHub Discussions](https://github.com/example/mcp-server-git-cz/discussions)
-- **Email**: support@example.com
+- **Documentation**: [Full documentation](https://github.com/FradSer/mcp-server-git-cz/wiki)
+- **Bug Reports**: [GitHub Issues](https://github.com/FradSer/mcp-server-git-cz/issues)
+- **Feature Requests**: [GitHub Discussions](https://github.com/FradSer/mcp-server-git-cz/discussions)
+- **Email**: fradser@gmail.com
 
 ## Acknowledgments
 
 - [Conventional Commits](https://www.conventionalcommits.org/) specification
 - [Model Context Protocol](https://modelcontextprotocol.io/) framework
 - [DeepSeek](https://www.deepseek.com/) and [Groq](https://groq.com/) for AI capabilities
-- All [contributors](https://github.com/example/mcp-server-git-cz/contributors) who help improve this project
+- All [contributors](https://github.com/FradSer/mcp-server-git-cz/contributors) who help improve this project
 
 ---
 
