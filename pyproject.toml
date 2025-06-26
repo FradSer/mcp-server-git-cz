@@ -1,0 +1,42 @@
+[project]
+name = "mcp-server-git-cz"
+version = "0.1.0"
+description = "An MCP server that automatically generates git commit messages in the style of https://commitizen-tools.github.io/commitizen/."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Gemini", email = "gemini@google.com" }]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = ["anyio>=4.5", "click>=8.1.0", "httpx>=0.27", "mcp", "uvicorn", "openai", "python-dotenv"]
+
+[project.scripts]
+mcp-server-git-cz = "mcp_server_git_cz.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mcp_server_git_cz"]
+
+[tool.pyright]
+include = ["mcp_server_git_cz"]
+venvPath = "."
+venv = ".venv"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = []
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.uv]
+dev-dependencies = ["pyright>=1.1.378", "pytest>=8.3.3", "ruff>=0.6.9"]
