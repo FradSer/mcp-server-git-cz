@@ -78,6 +78,23 @@ wheels = [
 ]
 
 [[package]]
+name = "groq"
+version = "0.29.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "distro" },
+    { name = "httpx" },
+    { name = "pydantic" },
+    { name = "sniffio" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/8c/d6/db0c61bad6ff6a2ba7083a943c62790f37969cb337d96a5a914cd3ac4311/groq-0.29.0.tar.gz", hash = "sha256:109dc4d696c05d44e4c2cd157652c4c6600c3e96f093f6e158facb5691e37847", size = 133989, upload-time = "2025-06-25T23:40:11.508Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a2/0b/ef7a92ec5ec23a7012975ed59ca3cef541d50a9f0d2dea947fe2723d011f/groq-0.29.0-py3-none-any.whl", hash = "sha256:03515ec46be1ef1feef0cd9d876b6f30a39ee2742e76516153d84acd7c97f23a", size = 130814, upload-time = "2025-06-25T23:40:10.391Z" },
+]
+
+[[package]]
 name = "h11"
 version = "0.16.0"
 source = { registry = "https://pypi.org/simple" }
@@ -240,6 +257,7 @@ source = { editable = "." }
 dependencies = [
     { name = "anyio" },
     { name = "click" },
+    { name = "groq" },
     { name = "httpx" },
     { name = "mcp" },
     { name = "openai" },
@@ -258,6 +276,7 @@ dev = [
 requires-dist = [
     { name = "anyio", specifier = ">=4.5" },
     { name = "click", specifier = ">=8.1.0" },
+    { name = "groq" },
     { name = "httpx", specifier = ">=0.27" },
     { name = "mcp" },
     { name = "openai" },

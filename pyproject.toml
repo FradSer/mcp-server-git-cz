@@ -13,7 +13,7 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
 ]
-dependencies = ["anyio>=4.5", "click>=8.1.0", "httpx>=0.27", "mcp", "uvicorn", "openai", "python-dotenv"]
+dependencies = ["anyio>=4.5", "click>=8.1.0", "httpx>=0.27", "mcp", "uvicorn", "openai", "python-dotenv", "groq"]
 
 [project.scripts]
 mcp-server-git-cz = "mcp_server_git_cz.server:main"

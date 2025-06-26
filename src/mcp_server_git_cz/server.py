@@ -1,3 +1,4 @@
+import os
 import anyio
 import click
 import mcp.types as types
@@ -19,7 +20,8 @@ load_dotenv()
 )
 def main(port: int, transport: str) -> int:
     app = Server("mcp-git-commit-generator")
-    commit_message_tool = CommitMessageTool()
+    llm_provider = os.environ.get("LLM_PROVIDER", "deepseek")
+    commit_message_tool = CommitMessageTool(llm_provider)
 
     @app.call_tool()
     async def call_tool(name: str, arguments: dict) -> list[types.TextContent]:
